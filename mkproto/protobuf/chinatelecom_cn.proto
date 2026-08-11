@@ -1,5 +1,5 @@
 canonical_name: "chinatelecom_cn"
-version: 99000000005
+version: 99000000008
 apns {
   apn {
     name: "中国电信 (China Telecom) NET"
@@ -39,6 +39,14 @@ apns {
   }
 }
 configs {
+  config {
+    key: "carrier_name_string"
+    text_value: "China Telecom"
+  }
+  config {
+    key: "carrier_name_override_bool"
+    bool_value: true
+  }
   config {
     key: "allow_emergency_numbers_in_call_log_bool"
     bool_value: true
@@ -146,10 +154,6 @@ configs {
   config {
     key: "5g_icon_configuration_string"
     text_value: "connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G"
-  }
-  config {
-    key: "nr_advanced_capable_pco_id_int"
-    int_value: 0
   }
   config {
     key: "5g_nr_ssrsrp_thresholds_int_array"
