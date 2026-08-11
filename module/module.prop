@@ -1,7 +1,7 @@
 id=CarrierSettingsCN
 name=China Carrier Settings
-version=1.4-DEV
-versionCode=4
+version=1.5-DEV
+versionCode=5
 author=Rivulet
 description=Pixel Carrier Settings for Chinese Carriers
 updateJson=https://file-storage.20percent.cool/public/json/module_carriersettingscn.json
