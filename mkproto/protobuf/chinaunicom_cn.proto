@@ -1,5 +1,5 @@
 canonical_name: "chinaunicom_cn"
-version: 99000000007
+version: 99000000011
 apns {
   apn {
     name: "中国联通 (China Unicom) NET"
@@ -45,6 +45,10 @@ configs {
     bool_value: true
   }
   config {
+    key: "enhanced_4g_lte_on_by_default_bool"
+    bool_value: true
+  }
+  config {
     key: "hide_enhanced_4g_lte_bool"
     bool_value: false
   }
@@ -81,6 +85,10 @@ configs {
     bool_value: true
   }
   config {
+    key: "vonr_on_by_default_bool"
+    bool_value: true
+  }
+  config {
     key: "vonr_setting_visibility_bool"
     bool_value: true
   }
@@ -97,7 +105,7 @@ configs {
   }
   config {
     key: "include_lte_for_nr_advanced_threshold_bandwidth_bool"
-    bool_value: false
+    bool_value: true
   }
   config {
     key: "additional_nr_advanced_bands_int_array"
