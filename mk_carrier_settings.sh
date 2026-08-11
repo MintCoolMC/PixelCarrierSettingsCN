@@ -1,5 +1,7 @@
 #!/bin/sh
 
+modify_last_updated=$1
+
 function generate_carrier_settings() {
     local input_file="$1"
     local output_file="$2"
@@ -9,10 +11,12 @@ function generate_carrier_settings() {
         exit 1
     fi
 
-    current_timestamp=$(date +%s)
-    sed "/last_updated {/,/}/ s/seconds: [0-9]*/seconds: $current_timestamp/" \
-    "$input_file" > "$input_file".tmp
-    mv "$input_file".tmp "$input_file"
+    if [  "$modify_last_updated" == "1" ]; then
+        current_timestamp=$(date +%s)
+        sed "/last_updated {/,/}/ s/seconds: [0-9]*/seconds: $current_timestamp/" \
+        "$input_file" > "$input_file".tmp
+        mv "$input_file".tmp "$input_file"
+    fi
 
     protoc -I./mkproto -I./mkproto/include --encode=com.google.carrier.CarrierSettings carrier_settings_1.proto < "$input_file" > "$output_file"
     if [ $? -ne 0 ]; then
