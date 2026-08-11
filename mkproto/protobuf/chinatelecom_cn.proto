@@ -1,5 +1,5 @@
 canonical_name: "chinatelecom_cn"
-version: 99000000004
+version: 99000000005
 apns {
   apn {
     name: "中国电信 (China Telecom) NET"
@@ -39,6 +39,38 @@ apns {
   }
 }
 configs {
+  config {
+    key: "allow_emergency_numbers_in_call_log_bool"
+    bool_value: true
+  }
+  config {
+    key: "show_apn_setting_cdma_bool"
+    bool_value: true
+  }
+  config {
+    key: "sim_country_iso_override_string"
+    text_value: "cn"
+  }
+  config {
+    key: "ascii_7_bit_support_for_long_message_bool"
+    bool_value: true
+  }
+  config {
+    key: "telephony_network_capability_priorities_string_array"
+    text_array {
+      item: "eims:90"
+      item: "supl:80"
+      item: "mms:70"
+      item: "xcap:60"
+      item: "cbs:50"
+      item: "mcx:50"
+      item: "fota:50"
+      item: "ims:40"
+      item: "dun:30"
+      item: "enterprise:20"
+      item: "internet:20"
+    }
+  }
   config {
     key: "carrier_volte_available_bool"
     bool_value: true
