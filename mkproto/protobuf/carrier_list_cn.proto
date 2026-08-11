@@ -1,0 +1,72 @@
+entry {
+  canonical_name: "chinamobile_cn"
+  carrier_id {
+    mcc_mnc: "46000"
+  }
+}
+entry {
+  canonical_name: "chinaunicom_cn"
+  carrier_id {
+    mcc_mnc: "46001"
+  }
+}
+entry {
+  canonical_name: "chinamobile_cn"
+  carrier_id {
+    mcc_mnc: "46002"
+  }
+}
+entry {
+  canonical_name: "chinatelecom_cn"
+  carrier_id {
+    mcc_mnc: "46003"
+  }
+}
+entry {
+  canonical_name: "chinamobile_cn"
+  carrier_id {
+    mcc_mnc: "46004"
+  }
+}
+entry {
+  canonical_name: "chinamobile_cn"
+  carrier_id {
+    mcc_mnc: "46007"
+  }
+}
+entry {
+  canonical_name: "chinamobile_cn"
+  carrier_id {
+    mcc_mnc: "46008"
+  }
+}
+entry {
+  canonical_name: "chinaunicom_cn"
+  carrier_id {
+    mcc_mnc: "46009"
+  }
+}
+entry {
+  canonical_name: "chinatelecom_cn"
+  carrier_id {
+    mcc_mnc: "46011"
+  }
+}
+entry {
+  canonical_name: "chinamobile_cn"
+  carrier_id {
+    mcc_mnc: "460013"
+  }
+}
+entry {
+  canonical_name: "cbn_cn"
+  carrier_id {
+    mcc_mnc: "46015"
+  }
+}
+entry {
+  canonical_name: "cbn_cn"
+  carrier_id {
+    mcc_mnc: "46060"
+  }
+}

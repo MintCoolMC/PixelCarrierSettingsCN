@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <!-- VoLTE -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="editable_enhanced_4g_lte_bool" value="true" />
+    <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+    <boolean name="hide_lte_plus_data_icon_bool" value="false" />
+    <!-- Cross SIM -->
+    <boolean name="carrier_cross_sim_ims_available_bool" value="true" />
+    <boolean name="enable_cross_sim_calling_on_opportunistic_data_bool" value="true" />
+    <!-- VoWiFi -->
+    <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    <boolean name="carrier_wfc_supports_wifi_only_bool" value="true" />
+    <boolean name="editable_wfc_mode_bool" value="true" />
+    <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+    <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+    <int name="wfc_spn_format_idx_int" value="6" />
+    <!-- VoNR -->
+    <boolean name="vonr_enabled_bool" value="true" />
+    <boolean name="vonr_setting_visibility_bool" value="true" />
+    <!-- NR NSA+SA -->
+    <int-array name="carrier_nr_availabilities_int_array" num="2">
+        <item value="1" />
+        <item value="2" />
+    </int-array>
+    <!-- NR Advanced -->
+    <int name="nr_advanced_threshold_bandwidth_khz_int" value="110000" />
+    <boolean name="include_lte_for_nr_advanced_threshold_bandwidth_bool" value="false" />
+    <int-array name="additional_nr_advanced_bands_int_array" num="7">
+        <item value="1" />
+        <item value="3" />
+        <item value="8" />
+        <item value="28" />
+        <item value="41" />
+        <item value="78" />
+        <item value="79" />
+    </int-array>
+    <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G</string>
+    <int name="nr_advanced_capable_pco_id_int" value="0" />
+    <int-array name="5g_nr_ssrsrp_thresholds_int_array" num="4"><item value="-128" /><item value="-118" /><item value="-108" /><item value="-98" /></int-array>
+    <!-- General -->
+    <boolean name="carrier_vt_available_bool" value="true" />
+    <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    <!-- AGPS -->
+    <string name="gps.lpp_profile">15</string>
+    <string name="gps.es_extension_sec">0</string>
+    <string name="gps.supl_es">0</string>
+    <boolean name="gps.enable_active_sim_emergency_supl" value="true" />
+    <string name="gps.a_glonass_pos_protocol_select">15</string>
+    <string name="gps.supl_host">supl.bd-caict.com</string>
+    <string name="gps.supl_mode">1</string>
+    <string name="gps.supl_port">7275</string>
+    <string name="gps.use_emergency_pdn_for_emergency_supl">1</string>
+    <string name="gps.supl_ver">0x20004</string>
+    <string name="gps.gps_lock">0</string>
+</carrier_config>

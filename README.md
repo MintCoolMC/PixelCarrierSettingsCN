@@ -1,2 +1,1 @@
 # PixelCarrierSettingsCN
-给Pixel系统添加中国运营商的配置文件

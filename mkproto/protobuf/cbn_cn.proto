@@ -1,0 +1,190 @@
+canonical_name: "cbn_cn"
+version: 99000000003
+apns {
+  apn {
+    name: "中国广电 (CBN) NET"
+    value: "cbnet"
+    type: DEFAULT
+    type: IA
+    type: SUPL
+    type: XCAP
+    protocol: IPV4V6
+    roaming_protocol: IPV4V6
+  }
+  apn {
+    name: "中国广电 (CBN) NET MMS"
+    value: "cmwap"
+    proxy: "10.0.0.172"
+    port: "80"
+    mmsc: "http://mmsc.monternet.com"
+    mmsc_proxy: "10.0.0.172"
+    mmsc_proxy_port: "80"
+    type: MMS
+    protocol: IPV4V6
+    roaming_protocol: IPV4V6
+  }
+  apn {
+    name: "中国广电 (CBN) NET IMS"
+    value: "ims"
+    type: IMS
+    protocol: IPV4V6
+    roaming_protocol: IPV4V6
+  }
+}
+configs {
+  config {
+    key: "carrier_volte_available_bool"
+    bool_value: true
+  }
+  config {
+    key: "editable_enhanced_4g_lte_bool"
+    bool_value: true
+  }
+  config {
+    key: "hide_enhanced_4g_lte_bool"
+    bool_value: false
+  }
+  config {
+    key: "hide_lte_plus_data_icon_bool"
+    bool_value: false
+  }
+  config {
+    key: "carrier_cross_sim_ims_available_bool"
+    bool_value: true
+  }
+  config {
+    key: "enable_cross_sim_calling_on_opportunistic_data_bool"
+    bool_value: true
+  }
+  config {
+    key: "carrier_wfc_ims_available_bool"
+    bool_value: true
+  }
+  config {
+    key: "carrier_wfc_supports_wifi_only_bool"
+    bool_value: true
+  }
+  config {
+    key: "editable_wfc_mode_bool"
+    bool_value: true
+  }
+  config {
+    key: "editable_wfc_roaming_mode_bool"
+    bool_value: true
+  }
+  config {
+    key: "show_wifi_calling_icon_in_status_bar_bool"
+    bool_value: true
+  }
+  config {
+    key: "wfc_spn_format_idx_int"
+    int_value: 6
+  }
+  config {
+    key: "vonr_enabled_bool"
+    bool_value: true
+  }
+  config {
+    key: "vonr_setting_visibility_bool"
+    bool_value: true
+  }
+  config {
+    key: "carrier_nr_availabilities_int_array"
+    int_array {
+      item: 1
+      item: 2
+    }
+  }
+  config {
+    key: "nr_advanced_threshold_bandwidth_khz_int"
+    int_value: 110000
+  }
+  config {
+    key: "include_lte_for_nr_advanced_threshold_bandwidth_bool"
+    bool_value: false
+  }
+  config {
+    key: "additional_nr_advanced_bands_int_array"
+    int_array {
+      item: 1
+      item: 3
+      item: 8
+      item: 28
+      item: 41
+      item: 78
+      item: 79
+    }
+  }
+  config {
+    key: "5g_icon_configuration_string"
+    text_value: "connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G"
+  }
+  config {
+    key: "nr_advanced_capable_pco_id_int"
+    int_value: 0
+  }
+  config {
+    key: "5g_nr_ssrsrp_thresholds_int_array"
+    int_array {
+      item: -128
+      item: -118
+      item: -108
+      item: -98
+    }
+  }
+  config {
+    key: "carrier_vt_available_bool"
+    bool_value: true
+  }
+  config {
+    key: "carrier_supports_ss_over_ut_bool"
+    bool_value: true
+  }
+  config {
+    key: "gps.lpp_profile"
+    text_value: "15"
+  }
+  config {
+    key: "gps.es_extension_sec"
+    text_value: "0"
+  }
+  config {
+    key: "gps.supl_es"
+    text_value: "0"
+  }
+  config {
+    key: "gps.enable_active_sim_emergency_supl"
+    bool_value: true
+  }
+  config {
+    key: "gps.a_glonass_pos_protocol_select"
+    text_value: "15"
+  }
+  config {
+    key: "gps.supl_host"
+    text_value: "supl.bd-caict.com"
+  }
+  config {
+    key: "gps.supl_mode"
+    text_value: "1"
+  }
+  config {
+    key: "gps.supl_port"
+    text_value: "7275"
+  }
+  config {
+    key: "gps.use_emergency_pdn_for_emergency_supl"
+    text_value: "1"
+  }
+  config {
+    key: "gps.supl_ver"
+    text_value: "0x20004"
+  }
+  config {
+    key: "gps.gps_lock"
+    text_value: "0"
+  }
+}
+last_updated {
+  seconds: 1786400333
+}
