@@ -41,9 +41,10 @@ else
     exit 1
 fi
 
-current_timestamp=$(date +%s)
 sed "s/version: [0-9]*/version: $version/g" mkproto/protobuf/carrier_list.proto > mkproto/protobuf/carrier_list.proto.tmp
 mv mkproto/protobuf/carrier_list.proto.tmp mkproto/protobuf/carrier_list.proto
+
+current_timestamp=$(date +%s)
 sed "/last_updated {/,/}/ s/seconds: [0-9]*/seconds: $current_timestamp/" \
     mkproto/protobuf/carrier_list.proto > mkproto/protobuf/carrier_list.proto.tmp
 mv mkproto/protobuf/carrier_list.proto.tmp mkproto/protobuf/carrier_list.proto
