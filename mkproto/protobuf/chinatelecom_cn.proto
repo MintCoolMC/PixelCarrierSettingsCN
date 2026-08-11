@@ -40,10 +40,6 @@ apns {
 }
 configs {
   config {
-    key: "carrier_name_string"
-    text_value: "China Telecom"
-  }
-  config {
     key: "carrier_name_override_bool"
     bool_value: true
   }
