@@ -1,5 +1,5 @@
 canonical_name: "cbn_cn"
-version: 99000000011
+version: 99000000012
 apns {
   apn {
     name: "中国广电 (CBN) NET"
@@ -90,15 +90,6 @@ configs {
   config {
     key: "5g_icon_configuration_string"
     text_value: "connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G"
-  }
-  config {
-    key: "5g_nr_ssrsrp_thresholds_int_array"
-    int_array {
-      item: -128
-      item: -118
-      item: -108
-      item: -98
-    }
   }
   config {
     key: "carrier_vt_available_bool"
