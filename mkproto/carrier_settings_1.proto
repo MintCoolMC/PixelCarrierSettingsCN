@@ -32,7 +32,6 @@ message CarrierSettings {
   reserved 5;
   // Vendor carrier configs
   optional VendorConfigs vendor_configs = 6;
-  // Last Updated
   optional .google.protobuf.Timestamp last_updated = 8;
 }
 // A collection of multiple carriers’ settings
