@@ -1,5 +1,5 @@
 canonical_name: "cbn_cn"
-version: 99000000003
+version: 99000000004
 apns {
   apn {
     name: "中国广电 (CBN) NET"
