@@ -55,7 +55,7 @@ entry {
 entry {
   canonical_name: "chinamobile_cn"
   carrier_id {
-    mcc_mnc: "460013"
+    mcc_mnc: "46013"
   }
 }
 entry {
