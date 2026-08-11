@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <carrier_config>
+    <string name="carrier_name_string">China Broadnet</string>
+    <boolean name="carrier_name_override_bool" value="true"/>
     <!-- VoLTE -->
     <boolean name="carrier_volte_available_bool" value="true" />
     <boolean name="editable_enhanced_4g_lte_bool" value="true" />

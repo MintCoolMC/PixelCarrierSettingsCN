@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <carrier_config>
+    <string name="carrier_name_string">China Unicom</string>
+    <boolean name="carrier_name_override_bool" value="true"/>
     <!-- AOSP Carrier Config -->
     <boolean name="allow_emergency_numbers_in_call_log_bool" value="true"/>
     <!-- VoLTE -->
