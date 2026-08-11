@@ -40,10 +40,6 @@ apns {
 }
 configs {
   config {
-    key: "carrier_name_override_bool"
-    bool_value: true
-  }
-  config {
     key: "allow_emergency_numbers_in_call_log_bool"
     bool_value: true
   }
