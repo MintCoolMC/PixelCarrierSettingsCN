@@ -57,30 +57,6 @@ configs {
     bool_value: true
   }
   config {
-    key: "carrier_wfc_ims_available_bool"
-    bool_value: true
-  }
-  config {
-    key: "carrier_wfc_supports_wifi_only_bool"
-    bool_value: true
-  }
-  config {
-    key: "editable_wfc_mode_bool"
-    bool_value: true
-  }
-  config {
-    key: "editable_wfc_roaming_mode_bool"
-    bool_value: true
-  }
-  config {
-    key: "show_wifi_calling_icon_in_status_bar_bool"
-    bool_value: true
-  }
-  config {
-    key: "wfc_spn_format_idx_int"
-    int_value: 6
-  }
-  config {
     key: "vonr_enabled_bool"
     bool_value: true
   }
@@ -106,12 +82,8 @@ configs {
   config {
     key: "additional_nr_advanced_bands_int_array"
     int_array {
-      item: 1
-      item: 3
-      item: 8
       item: 28
-      item: 41
-      item: 78
+      item: 77
       item: 79
     }
   }
