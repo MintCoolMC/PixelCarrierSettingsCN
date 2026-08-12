@@ -1,5 +1,5 @@
 canonical_name: "cbn_cn"
-version: 99000000013
+version: 99000000014
 apns {
   apn {
     name: "中国广电 (CBN) NET"
@@ -70,6 +70,10 @@ configs {
       item: 1
       item: 2
     }
+  }
+  config {
+    key: "nr_advanced_threshold_bandwidth_khz_int"
+    int_value: 110000
   }
   config {
     key: "include_lte_for_nr_advanced_threshold_bandwidth_bool"
