@@ -11,7 +11,7 @@ function generate_carrier_settings() {
         exit 1
     fi
 
-    if [  "$modify_last_updated" == "1" ]; then
+    if [  "$modify_last_updated" != "0" ]; then
         current_timestamp=$(date +%s)
         sed "/last_updated {/,/}/ s/seconds: [0-9]*/seconds: $current_timestamp/" \
         "$input_file" > "$input_file".tmp
