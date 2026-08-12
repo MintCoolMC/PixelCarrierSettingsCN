@@ -1,5 +1,5 @@
 canonical_name: "cbn_cn"
-version: 99000000014
+version: 99000000018
 apns {
   apn {
     name: "中国广电 (CBN) NET"
@@ -155,5 +155,5 @@ configs {
   }
 }
 last_updated {
-  seconds: 1786493489
+  seconds: 1786518922
 }

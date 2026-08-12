@@ -1,5 +1,5 @@
 canonical_name: "chinamobile_cn"
-version: 99000000014
+version: 99000000018
 apns {
   apn {
     name: "中国移动 (China Mobile) NET"
@@ -202,5 +202,5 @@ configs {
   }
 }
 last_updated {
-  seconds: 1786493489
+  seconds: 1786518922
 }
