@@ -1,9 +1,9 @@
-canonical_name: "chinamobile_cn"
+canonical_name: "cbn_cn"
 version: 99000000018
 apns {
   apn {
-    name: "中国移动 (China Mobile) NET"
-    value: "cmnet"
+    name: "中国广电 (CBN) NET"
+    value: "cbnet"
     type: DEFAULT
     type: IA
     type: SUPL
@@ -12,7 +12,7 @@ apns {
     roaming_protocol: IPV4V6
   }
   apn {
-    name: "中国移动 (China Mobile) WAP&MMS"
+    name: "中国广电 (CBN) NET MMS"
     value: "cmwap"
     proxy: "10.0.0.172"
     port: "80"
@@ -24,7 +24,7 @@ apns {
     roaming_protocol: IPV4V6
   }
   apn {
-    name: "中国移动 (China Mobile) NET IMS"
+    name: "中国广电 (CBN) NET IMS"
     value: "ims"
     type: IMS
     protocol: IPV4V6
@@ -32,30 +32,6 @@ apns {
   }
 }
 configs {
-  config {
-    key: "allow_emergency_numbers_in_call_log_bool"
-    bool_value: true
-  }
-  config {
-    key: "support_tdscdma_bool"
-    bool_value: true
-  }
-  config {
-    key: "allow_add_call_during_video_call"
-    bool_value: false
-  }
-  config {
-    key: "allow_hold_video_call_bool"
-    bool_value: false
-  }
-  config {
-    key: "support_video_conference_call_bool"
-    bool_value: false
-  }
-  config {
-    key: "default_mtu_int"
-    int_value: 1400
-  }
   config {
     key: "carrier_volte_available_bool"
     bool_value: true
@@ -75,30 +51,6 @@ configs {
   config {
     key: "hide_lte_plus_data_icon_bool"
     bool_value: false
-  }
-  config {
-    key: "carrier_wfc_ims_available_bool"
-    bool_value: true
-  }
-  config {
-    key: "carrier_wfc_supports_wifi_only_bool"
-    bool_value: true
-  }
-  config {
-    key: "editable_wfc_mode_bool"
-    bool_value: true
-  }
-  config {
-    key: "editable_wfc_roaming_mode_bool"
-    bool_value: true
-  }
-  config {
-    key: "show_wifi_calling_icon_in_status_bar_bool"
-    bool_value: true
-  }
-  config {
-    key: "wfc_spn_format_idx_int"
-    int_value: 6
   }
   config {
     key: "vonr_enabled_bool"
@@ -132,6 +84,7 @@ configs {
     int_array {
       item: 28
       item: 41
+      item: 78
       item: 79
     }
   }
@@ -202,5 +155,5 @@ configs {
   }
 }
 last_updated {
-  seconds: 1786518922
+  seconds: 1786736300
 }
