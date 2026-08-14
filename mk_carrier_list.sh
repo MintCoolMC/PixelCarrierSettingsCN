@@ -3,6 +3,11 @@
 input_file="$1"
 version="$2"
 
+if [ -z "$input_file" ] && [ ! -f "mkproto/protobuf/carrier_list.textpb" ]; then
+    echo "Error: 'mkproto/protobuf/carrier_list.textpb' not found, maybe you want generate it first?" >&2
+    exit 1
+fi
+
 if [ -n "$input_file" ] && [ -z "$version" ]; then
     echo "Error: missing output version (int64)" >&2
     exit 1
