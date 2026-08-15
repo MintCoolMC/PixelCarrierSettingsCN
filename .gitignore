@@ -1,4 +1,5 @@
-mkproto/protobuf/carrier_list.textpb.tmp
+mkproto/CarrierList_pb/
 mkproto/CarrierSettings/
 module/system/product/etc/CarrierSettings/
+module/carrier_list_cn.pb
 PixelCarrierSettingsCN.zip
