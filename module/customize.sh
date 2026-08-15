@@ -1,6 +1,6 @@
-
-
-
+if [ ! -f /product/etc/CarrierSettings/carrier_list.pb ]; then
+    abort "Error: carrier_list.pb not found, are you using a Pixel device?"
+fi
 
 killall com.google.android.carrier
 sed -i '/identified_carriers/d; /applied_settings_version/d' \
