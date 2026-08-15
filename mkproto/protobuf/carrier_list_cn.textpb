@@ -5,21 +5,9 @@ entry {
   }
 }
 entry {
-  canonical_name: "chinaunicom_cn"
-  carrier_id {
-    mcc_mnc: "46001"
-  }
-}
-entry {
   canonical_name: "chinamobile_cn"
   carrier_id {
     mcc_mnc: "46002"
-  }
-}
-entry {
-  canonical_name: "chinatelecom_cn"
-  carrier_id {
-    mcc_mnc: "46003"
   }
 }
 entry {
@@ -41,9 +29,15 @@ entry {
   }
 }
 entry {
-  canonical_name: "chinaunicom_cn"
+  canonical_name: "chinamobile_cn"
   carrier_id {
-    mcc_mnc: "46009"
+    mcc_mnc: "46013"
+  }
+}
+entry {
+  canonical_name: "chinatelecom_cn"
+  carrier_id {
+    mcc_mnc: "46003"
   }
 }
 entry {
@@ -53,9 +47,28 @@ entry {
   }
 }
 entry {
-  canonical_name: "chinamobile_cn"
+  canonical_name: "chinatelecom_cn"
   carrier_id {
-    mcc_mnc: "46013"
+    mcc_mnc: "20404"
+    spn: "中国电信"
+  }
+}
+entry {
+  canonical_name: "chinaunicom_cn"
+  carrier_id {
+    mcc_mnc: "46001"
+  }
+}
+entry {
+  canonical_name: "chinaunicom_cn"
+  carrier_id {
+    mcc_mnc: "46006"
+  }
+}
+entry {
+  canonical_name: "chinaunicom_cn"
+  carrier_id {
+    mcc_mnc: "46009"
   }
 }
 entry {
