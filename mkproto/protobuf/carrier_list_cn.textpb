@@ -1,3 +1,4 @@
+# China Mobile
 entry {
   canonical_name: "chinamobile_cn"
   carrier_id {
@@ -34,6 +35,8 @@ entry {
     mcc_mnc: "46013"
   }
 }
+
+# China Telecom
 entry {
   canonical_name: "chinatelecom_cn"
   carrier_id {
@@ -53,6 +56,8 @@ entry {
     spn: "中国电信"
   }
 }
+
+# China Unicom
 entry {
   canonical_name: "chinaunicom_cn"
   carrier_id {
@@ -71,6 +76,8 @@ entry {
     mcc_mnc: "46009"
   }
 }
+
+# China Broadcasting Network
 entry {
   canonical_name: "cbn_cn"
   carrier_id {
@@ -83,3 +90,4 @@ entry {
     mcc_mnc: "46060"
   }
 }
+
