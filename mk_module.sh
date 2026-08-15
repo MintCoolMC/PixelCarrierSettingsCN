@@ -4,6 +4,10 @@ complete=$1
 if [ "$complete" == "1" ]; then
     ./mk_carrier_list_cn.sh
     ./mk_carrier_settings.sh
+
+    if [ -f "./PixelCarrierSettingsCN.zip" ]; then
+        rm -f "./PixelCarrierSettingsCN.zip"
+    fi
 fi
 
 if [ ! -f "./mkproto/CarrierList_pb/carrier_list_cn.pb" ]; then
