@@ -1,5 +1,5 @@
 canonical_name: "chinatelecom_cn"
-version: 99000000018
+version: 385000000021
 apns {
   apn {
     name: "中国电信 (China Telecom) NET"
@@ -171,51 +171,7 @@ configs {
     key: "carrier_supports_ss_over_ut_bool"
     bool_value: true
   }
-  config {
-    key: "gps.lpp_profile"
-    text_value: "15"
-  }
-  config {
-    key: "gps.es_extension_sec"
-    text_value: "0"
-  }
-  config {
-    key: "gps.supl_es"
-    text_value: "0"
-  }
-  config {
-    key: "gps.enable_active_sim_emergency_supl"
-    bool_value: true
-  }
-  config {
-    key: "gps.a_glonass_pos_protocol_select"
-    text_value: "15"
-  }
-  config {
-    key: "gps.supl_host"
-    text_value: "supl.bd-caict.com"
-  }
-  config {
-    key: "gps.supl_mode"
-    text_value: "1"
-  }
-  config {
-    key: "gps.supl_port"
-    text_value: "7275"
-  }
-  config {
-    key: "gps.use_emergency_pdn_for_emergency_supl"
-    text_value: "1"
-  }
-  config {
-    key: "gps.supl_ver"
-    text_value: "0x20004"
-  }
-  config {
-    key: "gps.gps_lock"
-    text_value: "0"
-  }
 }
 last_updated {
-  seconds: 1786736300
+  seconds: 1787176880
 }
