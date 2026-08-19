@@ -16,6 +16,12 @@ function generate_carrier_settings() {
         sed "/last_updated {/,/}/ s/seconds: [0-9]*/seconds: $current_timestamp/" \
         "$input_file" > "$input_file".tmp
         mv "$input_file".tmp "$input_file"
+
+        previous_version=$(sed -n 's/^version: \([0-9]*\)$/\1/p' "$input_file")
+        [ -z "$previous_version" ] && previous_version=385000000000
+        version=$((previous_version + 1))
+        sed "s/version: [0-9]*/version: $version/g" "$input_file" > "$input_file".tmp
+        mv "$input_file".tmp "$input_file"
     fi
 
     protoc -I./mkproto -I./mkproto/include --encode=com.google.carrier.CarrierSettings carrier_settings.proto < "$input_file" > "$output_file"
